@@ -11,7 +11,11 @@ services:
       # ⚠️ READ IT CAREFULLY. If you did it wrong, your data could end up writing into a WRONG PATH.
       # ⚠️ 1. FULL path only. No relative path (MUST)
       # ⚠️ 2. Left Stacks Path === Right Stacks Path (MUST)
-      - /homelab/stacks:/homelab/stacks
+      - /home/matt/homelab/stacks:/home/matt/homelab/stacks
     environment:
       # Tell Dockge where to find the stacks
-      - DOCKGE_STACKS_DIR=/homelab/stacks
+      - DOCKGE_STACKS_DIR=/home/matt/homelab/stacks
+
+networks:
+  basestation_net:
+    external: true

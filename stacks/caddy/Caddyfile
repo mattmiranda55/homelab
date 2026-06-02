@@ -1,0 +1,15 @@
+{
+    auto_https off
+}
+
+dockge.mattmiranda.dev {
+    reverse_proxy dockge:5001
+}
+
+vault.mattmiranda.dev {
+    reverse_proxy vaultwarden:8080
+}
+
+notes.mattmiranda.dev {
+    reverse_proxy joplin:22300
+}
