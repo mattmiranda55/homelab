@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     environment:
       - DOMAIN=https://vaultwarden.mattmiranda.dev
-      - SIGNUPS_ALLOWED=false
+      - SIGNUPS_ALLOWED=true
       - ADMIN_TOKEN=${ADMIN_TOKEN}
       - ROCKET_PORT=8080
     ports:

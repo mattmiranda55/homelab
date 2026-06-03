@@ -1,15 +1,15 @@
-{
-    auto_https off
+http://dash.mattmiranda.dev {
+    reverse_proxy https://portainer:9443 {
+        transport http {
+            tls_insecure_skip_verify
+        }
+    }
 }
 
-dockge.mattmiranda.dev {
-    reverse_proxy dockge:5001
-}
-
-vault.mattmiranda.dev {
+http://vault.mattmiranda.dev {
     reverse_proxy vaultwarden:8080
 }
 
-notes.mattmiranda.dev {
+http://notes.mattmiranda.dev {
     reverse_proxy joplin:22300
 }

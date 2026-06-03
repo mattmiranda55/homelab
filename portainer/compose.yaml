@@ -1,0 +1,21 @@
+services:
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce:sts
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+      - /homelab/stacks:/stacks
+    ports:
+      - 9443:9443
+    networks:
+      - basestation_net
+
+volumes:
+  portainer_data:
+    name: portainer_data
+
+networks:
+  basestation_net:
+    external: true
