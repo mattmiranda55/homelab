@@ -1,0 +1,106 @@
+services:
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent
+    container_name: qbittorrent
+    network_mode: service:gluetun
+    depends_on:
+      - gluetun
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+      - WEBUI_PORT=8081
+    volumes:
+      - /homelab/stacks/arr-stack/qbittorrent:/config
+      - /mnt/archive/downloads:/downloads
+    restart: unless-stopped
+  prowlarr:
+    image: lscr.io/linuxserver/prowlarr
+    container_name: prowlarr
+    networks:
+      - basestation_net
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+    volumes:
+      - /homelab/stacks/media/prowlarr:/config
+    ports:
+      - 9696:9696
+    restart: unless-stopped
+  radarr:
+    image: lscr.io/linuxserver/radarr
+    container_name: radarr
+    networks:
+      - basestation_net
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+    volumes:
+      - /homelab/stacks/media/radarr:/config
+      - /mnt/archive/movies:/data/movies
+      - /mnt/archive/downloads:/downloads
+    ports:
+      - 7878:7878
+    restart: unless-stopped
+  sonarr:
+    image: lscr.io/linuxserver/sonarr
+    container_name: sonarr
+    networks:
+      - basestation_net
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+    volumes:
+      - /homelab/stacks/media/sonarr:/config
+      - /mnt/archive/tv:/data/tv
+      - /mnt/archive/downloads:/downloads
+    ports:
+      - 8989:8989
+    restart: unless-stopped
+  jellyseerr:
+    image: fallenbagel/jellyseerr
+    container_name: jellyseerr
+    networks:
+      - basestation_net
+    environment:
+      - TZ=America/New_York
+    volumes:
+      - /homelab/stacks/media/jellyseerr:/app/config
+    ports:
+      - 5055:5055
+    restart: unless-stopped
+  flaresolverr:
+    image: ghcr.io/flaresolverr/flaresolverr
+    container_name: flaresolverr
+    networks:
+      - basestation_net
+    environment:
+      - LOG_LEVEL=info
+      - TZ=America/New_York
+    ports:
+      - 8191:8191
+    restart: unless-stopped
+  gluetun:
+    image: qmcgaw/gluetun
+    container_name: gluetun
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    networks:
+      - basestation_net
+    environment:
+      - VPN_SERVICE_PROVIDER=protonvpn
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=${WIREGUARD_PRIVATE_KEY}
+    ports:
+      - 8081:8081 # qbittorrent webui
+      - 6881:6881
+      - 6881:6881/udp
+    restart: unless-stopped
+networks:
+  basestation_net:
+    external: true

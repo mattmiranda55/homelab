@@ -1,9 +1,5 @@
 http://dash.mattmiranda.dev {
-    reverse_proxy https://portainer:9443 {
-        transport http {
-            tls_insecure_skip_verify
-        }
-    }
+    reverse_proxy dockge-dockge-1:5001
 }
 
 http://vault.mattmiranda.dev {

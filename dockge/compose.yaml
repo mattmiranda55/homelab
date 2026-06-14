@@ -1,0 +1,17 @@
+services:
+  dockge:
+    image: louislam/dockge:1
+    restart: unless-stopped
+    ports:
+      - 5001:5001
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /home/matt/homelab/dockge/data:/app/data
+      - /home/matt/homelab/stacks:/home/matt/homelab/stacks
+    environment:
+      - DOCKGE_STACKS_DIR=/home/matt/homelab/stacks
+    networks:
+      - basestation_net
+networks:
+  basestation_net:
+    external: true

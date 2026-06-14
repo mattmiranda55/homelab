@@ -1,0 +1,133 @@
+[17:47:11] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.3+9-LTS; Eclipse Adoptium Temurin-25.0.3+9) on Linux 7.0.0-15-generic (amd64)
+[17:47:11] [ServerMain/INFO]: [bootstrap] Loading Paper 26.1.2-69-main@76d2ac7 (2026-06-03T17:32:02Z) for Minecraft 26.1.2
+[17:47:11] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:47:11] [ServerMain/INFO]: [PluginInitializerManager] Initialized 4 plugins
+[17:47:11] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (4):
+ - Geyser-Spigot (2.10.0-SNAPSHOT), LuckPerms (5.5.53), Skywars (5.6.34), floodgate (2.2.5-SNAPSHOT (b132-5a72b6a))
+[17:47:16] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[17:47:17] [ServerMain/INFO]: Found new data pack file/bukkit, loading it automatically
+[17:47:17] [ServerMain/INFO]: Found new data pack paper, loading it automatically
+[17:47:18] [Worker-Main-1/INFO]: No existing world data, creating new world
+[17:47:19] [ServerMain/INFO]: Loaded 1515 recipes
+[17:47:19] [ServerMain/INFO]: Loaded 1617 advancements
+[17:47:19] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[17:47:19] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 529.7ms
+[17:47:19] [Server thread/INFO]: Starting minecraft server version 26.1.2
+[17:47:19] [Server thread/INFO]: Loading properties
+[17:47:19] [Server thread/INFO]: This server is running Paper version 26.1.2-69-main@76d2ac7 (2026-06-03T17:32:02Z) (Implementing API version 26.1.2.build.69-stable)
+[17:47:20] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[17:47:20] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:47:20] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:47:20] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[17:47:20] [Server thread/INFO]: Default game type: SURVIVAL
+[17:47:20] [Server thread/INFO]: Generating keypair
+[17:47:20] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:47:20] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[17:47:20] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[17:47:21] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b132-5a72b6a)
+[17:47:21] [Server thread/INFO]: [floodgate] Took 683ms to boot Floodgate
+[17:47:21] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.10.0-SNAPSHOT
+[17:47:22] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[17:47:22] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[17:47:22] [Server thread/INFO]: [Skywars] Loading server plugin Skywars v5.6.34
+[17:47:22] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.53
+[17:47:25] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[17:47:25] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.53
+[17:47:25] [Server thread/INFO]:         __    
+[17:47:25] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.53
+[17:47:25] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[17:47:25] [Server thread/INFO]: 
+[17:47:26] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[17:47:26] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[17:47:26] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[17:47:26] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 988ms)
+[17:47:26] [Server thread/INFO]: Preparing level "fellers"
+[17:47:27] [Server thread/INFO]: Selecting spawn point for level 'minecraft:overworld'...
+[17:47:36] [Server thread/INFO]: Selecting spawn point for level 'minecraft:the_nether'...
+[17:47:37] [Server thread/INFO]: Selecting spawn point for level 'minecraft:the_end'...
+[17:47:37] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
+[17:47:37] [Server thread/INFO]: Preparing spawn area: 100%
+[17:47:37] [Server thread/INFO]: Prepared spawn area in 10753 ms
+[17:47:37] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+[17:47:37] [Server thread/INFO]: Preparing spawn area: 100%
+[17:47:37] [Server thread/INFO]: Prepared spawn area in 1190 ms
+[17:47:37] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+[17:47:37] [Server thread/INFO]: Preparing spawn area: 100%
+[17:47:37] [Server thread/INFO]: Prepared spawn area in 275 ms
+[17:47:37] [Server thread/INFO]: Done preparing level "fellers" (11.310s)
+[17:47:37] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b132-5a72b6a)
+[17:47:38] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.10.0-SNAPSHOT
+[17:47:39] [Server thread/INFO]: [Skywars] Enabling Skywars v5.6.34
+[17:47:39] [Server thread/INFO]: [Skywars] Trying to load NMS support for server version 'craftbukkit (org.bukkit.craftbukkit)'...
+[17:47:39] [Server thread/INFO]: [Skywars] Loaded support for NMS server version craftbukkit using handler: v1_21_R1.
+[17:47:39] [Server thread/INFO]: [Skywars] Using Bukkit World Manager
+[17:47:39] [Server thread/WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[17:47:50] [Server thread/INFO]: [Skywars] Maps directory is missing or no Maps were found!
+[17:47:51] [Server thread/INFO]: [spark] Starting background profiler...
+[17:47:51] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[17:47:51] [Server thread/INFO]: [Geyser-Spigot] 
+[17:47:51] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.10.0-b1162 (git-master-689f4d7)
+[17:47:51] [Server thread/INFO]: [Geyser-Spigot] 
+[17:47:51] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[17:47:54] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[17:47:54] [Server thread/INFO]: [Geyser-Spigot] Done (3.247s)! Run /geyser help for help!
+[17:47:55] [Server thread/INFO]: Starting remote control listener
+[17:47:55] [Server thread/INFO]: Thread RCON Listener started
+[17:47:55] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[17:47:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[fellers]'/minecraft:overworld
+[17:47:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[fellers]'/minecraft:the_nether
+[17:47:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[fellers]'/minecraft:the_end
+[17:47:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:47:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:47:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:47:55] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[17:47:55] [Server thread/INFO]: Running delayed init tasks
+[17:47:55] [Server thread/INFO]: Done (44.688s)! For help, type "help"
+[17:47:55] [ForkJoinPool.commonPool-worker-3/WARN]: [Geyser-Spigot] Missing MC locale file: en_us
+[17:47:55] [ForkJoinPool.commonPool-worker-3/INFO]: [Geyser-Spigot] Downloading Minecraft JAR to extract required files, please wait... (this may take some time depending on the speed of your internet connection)
+[17:47:56] [ForkJoinPool.commonPool-worker-3/INFO]: [Geyser-Spigot] Minecraft JAR has been successfully downloaded and loaded!
+[17:51:25] [RCON Listener #1/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 started
+[17:51:25] [Server thread/INFO]: [Rcon: Stopping the server]
+[17:51:25] [RCON Client /0:0:0:0:0:0:0:1 #2/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 shutting down
+[17:51:25] [Server thread/INFO]: Stopping server
+[17:51:25] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.5.53
+[17:51:25] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[17:51:25] [Server thread/INFO]: [LuckPerms] Closing storage...
+[17:51:25] [Server thread/INFO]: [LuckPerms] Goodbye!
+[17:51:25] [Server thread/INFO]: [Skywars] Disabling Skywars v5.6.34
+[17:51:25] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.10.0-SNAPSHOT
+[17:51:25] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[17:51:25] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[17:51:25] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b132-5a72b6a)
+[17:51:25] [Server thread/INFO]: Saving players
+[17:51:25] [Server thread/INFO]: Saving worlds
+[17:51:25] [WebSocketConnectReadThread-116/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[17:51:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[fellers]'/minecraft:overworld
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:overworld'
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:overworld'
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:overworld'
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:overworld' in 0.00s
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:overworld'
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:overworld'
+[17:51:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[fellers]'/minecraft:the_nether
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_nether'
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_nether'
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_nether'
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_nether' in 0.00s
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_nether'
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_nether'
+[17:51:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[fellers]'/minecraft:the_end
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_end'
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_end'
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_end'
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_end' in 0.00s
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_end'
+[17:51:25] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_end'
+[17:51:25] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:51:25] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:51:25] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:51:25] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[17:51:25] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[17:51:25] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[17:51:25] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[17:51:25] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

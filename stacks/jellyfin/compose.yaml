@@ -1,0 +1,21 @@
+services:
+  jellyfin:
+    image: lscr.io/linuxserver/jellyfin
+    container_name: jellyfin
+    networks:
+      - basestation_net
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+    volumes:
+      - /homelab/stacks/media/jellyfin:/config
+      - /mnt/archive/movies:/data/movies
+      - /mnt/archive/tv:/data/tv
+    ports:
+      - "8096:8096"
+    restart: unless-stopped
+
+networks:
+  basestation_net:
+    external: true
